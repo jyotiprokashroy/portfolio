@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Merriweather:ital@1&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul class="logo"> portfo<span>lio.   </span> </ul>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>It's me..</p>
+                <h1>Jyoti Prokash Roy</h1>
+                <p>Web Developer</p>
+                <button class="c-btn">Hire me</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="WhatsApp Image 2023-09-11 at 16.34.07.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        As an aspiring professional seeking an entry-level position, I am excited to begin my career in a high-level professional environment.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Engineering</span><br>JAVA programming with dsa</li>
+                            <li><span>Web Development</span><br>Website designing (frontend & backend)</li>
+                            <li><span>Data Science</span><br>Machine Learning & AI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-current</span><br>JAVA programming with dsa</li>
+                            <li><span>2020-2021</span><br>Website designing (frontend & backend)</li>
+                            <li><span>2019-2020</span><br>Machine Learning & AI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Kalinga Institute Of Industrial Technology - KIIT (2021-current)</span><br>BTech in IT</li>
+                            <li><span>Barasat P.C.S. Govt. High School (2019-2021)</span><br>Higher Secondary</li>
+                            <li><span>Barasat Vivekananda Adarsha Vidyapith (2018-19)</span><br>Madhyamik Examination</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project">
+                <h2>Netflix Clone</h2>
+                <p>A clone of the Netflix website created using HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/yourusername/netflix-clone" target="_blank">GitHub Repo</a>
+            </div>
+            <div class="project">
+                <h2>Portfolio</h2>
+                <p>My personal portfolio website showcasing my skills and projects.</p>
+                <a href="https://github.com/yourusername/portfolio" target="_blank">GitHub Repo</a>
+            </div>
+            <div class="project">
+                <h2>Temperature Converter</h2>
+                <p>A web app that converts temperatures between Celsius and Fahrenheit.</p>
+                <a href="https://github.com/yourusername/temperature-converter" target="_blank">GitHub Repo</a>
+            </div>
+            <!-- Add more project entries as needed -->
+        </div>
+    </div>
+<p><p></p></p>
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class='bx bxl-gmail' ></i>jproy@jproy.info</p>
+                    <p><i class='bx bxs-phone'></i>7595990536</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class='bx bxl-facebook' ></i></a>
+                        <a href=""><i class='bx bxl-instagram' ></i></a>
+                        <a href=""><i class='bx bxl-twitter' ></i></a>
+                        <a href=""><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                    <a href="Images/E-TICKET_10JULY (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @portfolio, made with by Jyoti Prokash Roy</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
